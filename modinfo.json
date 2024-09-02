@@ -3,7 +3,7 @@
     "DisplayName": "Misc Role Customisation",
     "Authors": [ "Det", "AlchlcSystm" ],
     "Description": "A branch of colour swapper that allows you to change various visual things about roles.",
-    "Version": "1.0.0",
+    "Version": "1.0.1",
     "RequiredMods": [ ],
     "Settings": {
         "TextInputSettings": [
