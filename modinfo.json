@@ -86,36 +86,6 @@
                 "AvailableInGame": false
             },
             {
-                "Name": "Town Start 2",
-                "Description": "Town Start Colour",
-                "DefaultValue": "#06E00C",
-                "AvailableInGame": false
-            },
-            {
-                "Name": "Town Second",
-                "Description": "Town Second Colour",
-                "DefaultValue": "#06E00C",
-                "AvailableInGame": false
-            },
-            {
-                "Name": "Town Third",
-                "Description": "Town Third Colour",
-                "DefaultValue": "#06E00C",
-                "AvailableInGame": false
-            },
-            {
-                "Name": "Town Fourth",
-                "Description": "Town Fourth Colour",
-                "DefaultValue": "#06E00C",
-                "AvailableInGame": false
-            },
-            {
-                "Name": "Town End 2",
-                "Description": "Town End Colour",
-                "DefaultValue": "#06E00C",
-                "AvailableInGame": false
-            },
-            {
                 "Name": "Coven Start",
                 "Description": "Coven Start Colour",
                 "DefaultValue": "#B545FF",
