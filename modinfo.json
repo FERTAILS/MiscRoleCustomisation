@@ -1,0 +1,414 @@
+{
+    "HarmonyId": "det.rolecustomizationmod",
+    "DisplayName": "Misc Role Customisation",
+    "Authors": [ "Det", "AlchlcSystm" ],
+    "Description": "A branch of colour swapper that allows you to change various visual things about roles.",
+    "Version": "1.0.0",
+    "RequiredMods": [ ],
+    "Settings": {
+        "TextInputSettings": [
+            {
+                "Name": "Recruit Label",
+                "Description": "Changes what it says on the Recruit Label in your Role Card",
+                "DefaultValue": "Recruited",
+                "Regex": "[A-Za-z]",
+                "CharacterLimit": 100,
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Town Traitor Label",
+                "Description": "Changes what it says on the Traitor Label in your Role Card",
+                "DefaultValue": "Town Traitor",
+                "Regex": "[A-Za-z]",
+                "CharacterLimit": 100,
+                "AvailableInGame": false
+            },
+            {
+                "Name": "VIP Label",
+                "Description": "Changes what it says on the VIP Label in your Role Card",
+                "DefaultValue": "VIP",
+                "Regex": "[A-Za-z]",
+                "CharacterLimit": 100,
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Court Label",
+                "Description": "Changes what it says when the Judge speaks during court",
+                "DefaultValue": "Court",
+                "Regex": "[A-Za-z]",
+                "CharacterLimit": 100,
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Jury Label",
+                "Description": "Changes what it says when the non-Judge players speak during court",
+                "DefaultValue": "Jury",
+                "Regex": "[A-Za-z]",
+                "CharacterLimit": 100,
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Pirate Label",
+                "Description": "Changes what it says when the Pirate speaks during a duel (ONLY IN MODDED)",
+                "DefaultValue": "Pirate",
+                "Regex": "[A-Za-z]",
+                "CharacterLimit": 100,
+                "AvailableInGame": false
+            }
+        ],
+        "CheckboxSettings": [
+            {
+                "Name": "Faction Name Next to Role",
+                "SettingID": "rolecustomizationmod.showfactionname",
+                "Description": "If a role has changed faction, show the name of the faction next to the role in the graveyard and WDAH.",
+                "DefaultValue": false,
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Faction-Specific Role Names",
+                "SettingID": "rolecustomizationmod.factionspecificnames",
+                "Description": "Uses a special string table you can edit that changes Role Names depending on what faction they belong to.<color=#FF0000> WARNING: This setting will break role names if you do not have the text editor mod. You must add all strings from this mod's xmls to your xml. To download these xmls, there will be a button under Mod Actions that will send you to a Google Drive containing the strings needed.</color>",
+                "DefaultValue": false,
+                "AvailableInGame": false
+            }
+        ],
+        "ColorPickerSettings": [
+            {
+                "Name": "Town Start",
+                "Description": "Town Start Colour",
+                "DefaultValue": "#06E00C",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Town End",
+                "Description": "Town End Colour",
+                "DefaultValue": "#06E00C",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Town Start 2",
+                "Description": "Town Start Colour",
+                "DefaultValue": "#06E00C",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Town Second",
+                "Description": "Town Second Colour",
+                "DefaultValue": "#06E00C",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Town Third",
+                "Description": "Town Third Colour",
+                "DefaultValue": "#06E00C",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Town Fourth",
+                "Description": "Town Fourth Colour",
+                "DefaultValue": "#06E00C",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Town End 2",
+                "Description": "Town End Colour",
+                "DefaultValue": "#06E00C",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Coven Start",
+                "Description": "Coven Start Colour",
+                "DefaultValue": "#B545FF",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Coven End",
+                "Description": "Coven End Colour",
+                "DefaultValue": "#B545FF",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Apocalypse Start",
+                "Description": "Apocalypse Start Colour",
+                "DefaultValue": "#FF004E",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Apocalypse End",
+                "Description": "Apocalypse End Colour",
+                "DefaultValue": "#FF004E",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Jester Start",
+                "Description": "Jester Start Colour",
+                "DefaultValue": "#F5A6D4",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Jester End",
+                "Description": "Jester End Colour",
+                "DefaultValue": "#F5A6D4",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Doomsayer Start",
+                "Description": "Doomsayer Start Colour",
+                "DefaultValue": "#00CC99",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Doomsayer End",
+                "Description": "Doomsayer End Colour",
+                "DefaultValue": "#00CC99",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Pirate Start",
+                "Description": "Pirate Start Colour",
+                "DefaultValue": "#ECC23E",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Pirate End",
+                "Description": "Pirate End Colour",
+                "DefaultValue": "#ECC23E",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Executioner Start",
+                "Description": "Executioner Start Colour",
+                "DefaultValue": "#949797",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Executioner End",
+                "Description": "Executioner End Colour",
+                "DefaultValue": "#949797",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Inquisitor Start",
+                "Description": "Inquisitor Start Colour",
+                "DefaultValue": "#821252",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Inquisitor End",
+                "Description": "Inquisitor End Colour",
+                "DefaultValue": "#821252",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Arsonist Start",
+                "Description": "Arsonist Start Colour",
+                "DefaultValue": "#DB7601",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Arsonist End",
+                "Description": "Arsonist End Colour",
+                "DefaultValue": "#DB7601",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Serial Killer Start",
+                "Description": "Serial Killer Start Colour",
+                "DefaultValue": "#1D4DFC",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Serial Killer End",
+                "Description": "Serial Killer End Colour",
+                "DefaultValue": "#1D4DFC",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Shroud Start",
+                "Description": "Shroud Start Colour",
+                "DefaultValue": "#6699FF",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Shroud End",
+                "Description": "Shroud End Colour",
+                "DefaultValue": "#6699FF",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Werewolf Start",
+                "Description": "Werewolf Start Colour",
+                "DefaultValue": "#9D7038",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Werewolf End",
+                "Description": "Werewolf End Colour",
+                "DefaultValue": "#9D7038",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Vampire Start",
+                "Description": "Vampire Start Colour",
+                "DefaultValue": "#A22929",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Vampire End",
+                "Description": "Vampire End Colour",
+                "DefaultValue": "#A22929",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Auditor Start",
+                "Description": "Auditor Start Colour",
+                "DefaultValue": "#AEBA87",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Auditor End",
+                "Description": "Auditor End Colour",
+                "DefaultValue": "#E8FCC5",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Judge Start",
+                "Description": "Judge Start Colour",
+                "DefaultValue": "#C77364",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Judge End",
+                "Description": "Judge End Colour",
+                "DefaultValue": "#C93D50",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Starspawn Start",
+                "Description": "Starspawn Start Colour",
+                "DefaultValue": "#FCE79A",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Starspawn End",
+                "Description": "Starspawn Start Colour",
+                "DefaultValue": "#999CFF",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Cursed Soul Start",
+                "Description": "Cursed Soul Start Faction Colour",
+                "DefaultValue": "#4FFF9F",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Cursed Soul End",
+                "Description": "Cursed Soul End Faction Colour",
+                "DefaultValue": "#B54FFF",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Jackal/Recruit Start",
+                "Description": "Jackal/Recruit Start Faction Colour",
+                "DefaultValue": "#404040",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Jackal/Recruit End",
+                "Description": "Jackal/Recruit End Faction Colour",
+                "DefaultValue": "#D0D0D0",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Pandora Start",
+                "Description": "Pandora Start Faction Colour",
+                "DefaultValue": "#B545FF",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Pandora End",
+                "Description": "Pandora End Faction Colour",
+                "DefaultValue": "#FF004E",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Compliance Start",
+                "Description": "Compliance Start Faction Colour",
+                "DefaultValue": "#2D44B5",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Compliance Middle",
+                "Description": "Compliance Middle Faction Colour",
+                "DefaultValue": "#AE1B1E",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Compliance End",
+                "Description": "Compliance End Faction Colour",
+                "DefaultValue": "#FC9F32",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Egotist Start",
+                "Description": "Egotist Start Colour",
+                "DefaultValue": "#359f3f",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Egotist End",
+                "Description": "Egotist End Colour",
+                "DefaultValue": "#3f359f",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Neutral",
+                "Description": "Neutral Colour",
+                "DefaultValue": "#A9A9A9",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Stoned/Hidden",
+                "Description": "Stoned and Hidden Faction Colour",
+                "DefaultValue": "#9C9A9A",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Frogs Start",
+                "Description": "Frogs Start Colour",
+                "DefaultValue": "#1e49cf",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Frogs End",
+                "Description": "Frogs End Colour",
+                "DefaultValue": "#1e49cf",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Lions Start",
+                "Description": "Lions Start Colour",
+                "DefaultValue": "#ffc34f",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Lions End",
+                "Description": "Lions End Colour",
+                "DefaultValue": "#ffc34f",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Hawks Start",
+                "Description": "Hawks Start Colour",
+                "DefaultValue": "#a81538",
+                "AvailableInGame": false
+            },
+            {
+                "Name": "Hawks End",
+                "Description": "Hawks End Colour",
+                "DefaultValue": "#a81538",
+                "AvailableInGame": false
+            }
+        ]
+    }
+}
