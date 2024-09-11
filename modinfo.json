@@ -3,8 +3,9 @@
     "DisplayName": "Misc Role Customisation",
     "Authors": [ "Det", "AlchlcSystm" ],
     "Description": "A branch of colour swapper that allows you to change various visual things about roles.",
-    "Version": "1.0.1",
-    "RequiredMods": [ ],
+    "Version": "1.0.2",
+    "RequiredMods": [],
+    "ConflictingMods": [ "curtis.colour.swapper", "alchlcsystm.fixes" ],
     "Settings": {
         "TextInputSettings": [
             {
